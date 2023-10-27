@@ -44,5 +44,5 @@ Follow [BERT-ATTACK](https://github.com/LinyangLee/BERT-Attack) for the usage of
 * --anticausal: For each modified tokens, we have 3 different lists of original tokens
 * --mdl_direction: Direction to compute the MDL [causal, anticausal]
 
-- The computed MDL can be found *mdl_values* directory inside *amazon_data* directory. Just traverse through the experiment numbers and the variations of H to get the *mdl_values* for each variations.
+#The computed MDL can be found *mdl_values* directory inside *amazon_data* directory. Just traverse through the experiment numbers and the variations of H to get the *mdl_values* for each variations.
     
