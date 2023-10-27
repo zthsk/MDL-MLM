@@ -8,8 +8,6 @@ from nltk.corpus import stopwords
 import random
 import math 
 
-
-
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 def _tokenize(seq):
@@ -353,12 +351,12 @@ for i,seed in enumerate(seeds):
     print('\n')
     random.seed(seed)
     #name of the directory to save the data and load the json file
-    dir_name = f'amazon_data/h_hprime_atn_ltst/exp_{i}'
+    dir_name = f'data/exp_{i}'
     print(f' Directory:  {dir_name}')
               
    
     #load the logs json
-    json_file_path = 'amazon_data/amazon_swapped.json'
+    json_file_path = 'amazon_swapped.json'
     
     #extract the data from the json file
     attacked_data, org_data, mappings = tokenize_reviews(json_file_path, num_data = 20000)
