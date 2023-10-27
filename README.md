@@ -18,6 +18,10 @@ cd adversarial_attack
 python bertattack.py --data_path amazon_original.tsv --mlm_path bert-base-uncased --tgt_path models/amazon_classifier --use_sim_mat 1 --output_dir amazon_logs.tsv --num_label 2 --use_bpe 1 --k 48 --start 0 --end 1000 --threshold_pred_score 0
 ```
 Follow [BERT-ATTACK](https://github.com/LinyangLee/BERT-Attack) for the usage of different arguments. 
+### Before computing the mdl, pre-process the perturbed data obtained from previos step. To generate the datasets with different variations of H, run
+```
+python get_datasets.py
+```
 
 ## Computing MDL
 - Finetune the mlm model and obtain a finetuned model for each datasets, run 
@@ -40,8 +44,8 @@ Follow [BERT-ATTACK](https://github.com/LinyangLee/BERT-Attack) for the usage of
 * --epoch : No. of epoch to train the model
 * --batch_size: Size of each batch
 * --causal_percent: Different variations of H [0, 25, 50, 75, 100]
-* --experiment: We have different variations of datasets with different modified tokens
-* --anticausal: For each modified tokens, we have 3 different lists of original tokens
+* --experiment: We have different variations of datasets with different modified tokens. We have experiments [1,2,3,4,5]
+* --anticausal: For each modified tokens, we have 3 different lists of original tokens.
 * --mdl_direction: Direction to compute the MDL [causal, anticausal]
 
 ### The computed MDL can be found *mdl_values* directory inside *amazon_data* directory. Just traverse through the experiment numbers and the variations of H to get the *mdl_values* for each variations.
