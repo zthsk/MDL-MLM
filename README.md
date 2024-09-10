@@ -48,5 +48,22 @@ python get_datasets.py
 * --anticausal: For each modified tokens, we have 3 different lists of original tokens.
 * --mdl_direction: Direction to compute the MDL [causal, anticausal]
 
-### The computed MDL can be found *mdl_values* directory inside *amazon_data* directory. Just traverse through the experiment numbers and the variations of H to get the *mdl_values* for each variations.
+## The computed MDL can be found *mdl_values* directory inside *amazon_data* directory. Just traverse through the experiment numbers and the variations of H to get the *mdl_values* for each variations.
+
+## Citation
+```bash
+@Article{e26050354,
+AUTHOR = {Tiwari, Kshitiz and Zhang, Lu},
+TITLE = {Implications of Minimum Description Length for Adversarial Attack in Natural Language Processing},
+JOURNAL = {Entropy},
+VOLUME = {26},
+YEAR = {2024},
+NUMBER = {5},
+ARTICLE-NUMBER = {354},
+URL = {https://www.mdpi.com/1099-4300/26/5/354},
+PubMedID = {38785603},
+ISSN = {1099-4300},
+DOI = {10.3390/e26050354}
+}
+```
     
