@@ -1,5 +1,5 @@
 # Implications of Minimum Description Length for Adversarial Attack in NLP
-
+This is the official repository of the article [Implications of Minimum Description Length for Adversarial Attack in NLP](https://www.mdpi.com/1099-4300/26/5/354)
 ## Dependencies
 - Python 3.10
 - [PyTorch](https://github.com/pytorch/pytorch) 1.13.1
